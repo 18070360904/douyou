@@ -1,0 +1,470 @@
+a,
+input,
+button {
+  /*清除点击阴影*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+  /*清除按钮的圆角*/
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+body {
+  /*选中文字设置*/
+  margin: 0;
+  -webkit-user-select: none;
+  /*禁止文字缩放*/
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+body * {
+  /*文字设置*/
+  -webkit-user-select: none;
+  font-family: Helvetica;
+}
+p,
+ul,
+li,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+span {
+  margin: 0;
+  padding: 0;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#arrow {
+  position: fixed;
+  z-index: 99;
+  width: 2rem;
+  height: 1.8rem;
+  bottom: 20%;
+  right: 0;
+  border-radius: 0.12rem;
+  background: #000;
+  opacity: 0.3;
+  display: none;
+}
+#arrow #aimg {
+  position: absolute;
+  z-index: 2;
+  width: 2rem;
+  height: 1.6rem;
+  top: 0;
+  right: 0;
+  border-radius: 0.24rem;
+  background: url(../img/j1.png) 90% 33% no-repeat;
+  background-size: 6rem 6rem;
+}
+.header {
+  width: 100%;
+  position: relative;
+  background: #1C63CF;
+  height: 1.8rem;
+  overflow: hidden;
+}
+.header .header_title {
+  float: left;
+  color: #FFF;
+  font-weight: 600;
+  overflow: hidden;
+  line-height: 1.8rem;
+  font-size: 0.72rem;
+  width: 8rem;
+  height: 1.8rem;
+}
+.header .header_title a {
+  color: #fff;
+}
+.header .logo_you {
+  float: right;
+  height: 1.8rem;
+}
+.header .logo_you #logo_ge {
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  background: url(../img/i1.png) no-repeat 0.6rem 0.4rem;
+  background-size: 0.8rem;
+}
+.header .logo_you #logo_seach {
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  background: url(../img/d1.png) no-repeat 0.84rem -1.5rem;
+  background-size: 4.06rem;
+}
+.danji_nav {
+  width: 100%;
+  height: 1.6rem;
+  line-height: 1.6rem;
+}
+.danji_nav a {
+  width: 18%;
+  display: inline-block;
+  color: #666;
+  font-size: 0.64rem;
+  text-align: center;
+}
+.danji_nav .active {
+  font-weight: bold;
+  color: #5FBA14;
+}
+.banner {
+  height: 8.24rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.banner ul {
+  position: absolute;
+  width: 600%;
+  overflow: hidden;
+}
+.banner ul li {
+  width: 15rem;
+  float: left;
+  height: 8.24rem;
+}
+.banner ul li a {
+  display: block;
+  position: relative;
+}
+.banner ul li a p {
+  width: 100%;
+  color: #fff;
+  font-size: 0.66rem;
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0.4rem;
+  left: -1rem;
+  padding: 0 1.28rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+}
+.banner ul li img {
+  width: 15rem;
+  height: 8.24rem;
+}
+.banner .xdd {
+  position: absolute;
+  text-align: center;
+  bottom: 0.4rem;
+  left: 12.4rem;
+}
+.banner .xdd li {
+  width: 0.24rem;
+  height: 0.24rem;
+  border-radius: 0.12rem;
+  background: #7f8990;
+  float: left;
+  margin-right: 0.2rem;
+}
+.banner .xdd .active {
+  background: #ff2730;
+}
+.arrow {
+  position: fixed;
+  z-index: 1;
+  width: 2rem;
+  height: 1.8rem;
+  bottom: 0;
+  right: 0;
+  border-radius: 0.12rem;
+  background: #000;
+  opacity: 0.3;
+}
+.arrow .aimg {
+  position: absolute;
+  z-index: 2;
+  width: 2rem;
+  height: 1.6rem;
+  top: 0;
+  right: 0;
+  border-radius: 0.24rem;
+  background: url(../img/j1.png) -92px -35px no-repeat;
+  background-size: 6rem 6rem;
+}
+.common_pic {
+  position: relative;
+  z-index: 0;
+  display: block;
+  width: 94%;
+  height: auto;
+  padding: 0.4rem 0.4rem 0.2rem 0.4rem;
+  border-bottom: 0.02rem solid #EEE;
+  color: #333;
+  text-decoration: none;
+  margin-right: 0.4rem;
+}
+.common_pic img {
+  width: 100%;
+  height: 4.2rem;
+  display: block;
+}
+.common_pic .ren_title {
+  font-size: 0.72rem;
+  overflow: hidden;
+}
+.common_pic .ren_btn {
+  line-height: 0.92rem;
+  padding: 0.4rem 0;
+  font-size: 0.56rem;
+}
+.common_pic .ren_btn span {
+  color: #FFF;
+  opacity: 0.3;
+  font-size: 0.56rem;
+  display: inline-block;
+  padding: 0.05rem 0.3rem;
+}
+.common_pic .ren_btn .djl {
+  background: #0077FF;
+}
+.common_pic .ren_btn p {
+  float: right;
+  color: #999;
+}
+.common_pic {
+  position: relative;
+  z-index: 0;
+  display: block;
+  width: 94%;
+  height: auto;
+  padding: 0.4rem 0.4rem 0.2rem 0.4rem;
+  border-bottom: 0.02rem solid #EEE;
+  color: #333;
+  text-decoration: none;
+  margin-right: 0.4rem;
+}
+.common_pic img {
+  width: 100%;
+  height: 4.2rem;
+  display: block;
+}
+.common_pic .ren_title {
+  font-size: 0.72rem;
+  overflow: hidden;
+}
+.common_pic .ren_btn {
+  line-height: 0.92rem;
+  padding: 0.4rem 0;
+  font-size: 0.56rem;
+}
+.common_pic .ren_btn span {
+  color: #FFF;
+  opacity: 0.3;
+  font-size: 0.56rem;
+  display: inline-block;
+  padding: 0.05rem 0.3rem;
+}
+.common_pic .ren_btn .djl {
+  background: #0077FF;
+}
+.common_pic .ren_btn p {
+  float: right;
+  color: #999;
+}
+.common_heng {
+  display: block;
+  position: relative;
+  z-index: 0;
+  width: 96%;
+  height: auto;
+  padding: 0.5em 2%;
+  border-bottom: 1px solid #EEE;
+  color: #333;
+  text-decoration: none;
+}
+.common_heng img {
+  display: block;
+  float: left;
+  width: 30%;
+  height: auto;
+  margin: 0 3% 0 0;
+}
+.common_heng .heng_right {
+  float: left;
+  width: 60%;
+}
+.common_heng .heng_right .heng_title {
+  color: #333;
+  font-size: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+.common_heng .heng_right .heng_bottom {
+  width: 100%;
+  padding-top: 0.2rem;
+  line-height: 0.6rem;
+  vertical-align: middle;
+}
+.common_heng .heng_right .heng_bottom span {
+  color: #FFF;
+  opacity: 0.3;
+  display: inline-block;
+  padding: 0.05rem 0.3rem;
+  font-size: 0.56rem;
+}
+.common_heng .heng_right .heng_bottom .wyou {
+  background: #C000E1;
+}
+.common_heng .heng_right .heng_bottom p {
+  float: right;
+  font-size: 0.56rem;
+  color: #999;
+}
+#danji .danji_title {
+  border-bottom: 1px solid #EDEDED;
+  margin-bottom: 0.4rem;
+}
+#danji .danji_title h6 {
+  float: left;
+  padding: 0.4rem 0;
+  width: 25%;
+  border-bottom: 3px solid #5FBA14;
+  color: #5FBA14;
+  text-align: center;
+}
+#danji .danji_title a {
+  float: right;
+  color: #a5a5a5;
+  font-size: 0.68rem;
+  margin-top: 0.4rem;
+  padding: 0.2rem 0.4rem;
+}
+#danji .danji_img {
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0.4rem 0.4rem;
+}
+#danji .danji_img a {
+  float: left;
+  width: 25%;
+  padding: 0 0 0.2rem;
+  margin: 0 0.5rem;
+  color: #333;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+  overflow: hidden;
+}
+#danji .danji_img a img {
+  display: block;
+  width: 100%;
+}
+#danji .danji_img a span {
+  display: inline-block;
+  font-size: 0.52rem;
+  height: 1.2rem;
+  vertical-align: middle;
+  overflow: hidden;
+}
+#more {
+  display: block;
+  width: 95%;
+  margin: 0.2rem auto;
+  font-size: 0.64rem;
+  line-height: 2em;
+  background: #eee;
+  color: #666;
+  text-align: center;
+  font-family: "Microsoft YaHei", Simsun;
+}
+.danji_title {
+  border-bottom: 1px solid #EDEDED;
+  margin-bottom: 0.4rem;
+}
+.danji_title h6 {
+  float: left;
+  padding: 0.4rem 0;
+  width: 25%;
+  border-bottom: 3px solid #5FBA14;
+  color: #5FBA14;
+  text-align: center;
+}
+.danji_title a {
+  float: right;
+  color: #a5a5a5;
+  font-size: 0.68rem;
+  margin-top: 0.4rem;
+  padding: 0.2rem 0.4rem;
+}
+#video {
+  width: 96%;
+  padding: 0.2rem 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#video #movie {
+  float: left;
+  display: block;
+  width: 48%;
+  margin: 0 0.1rem 0.2rem;
+  text-align: center;
+  overflow: hidden;
+}
+#video #movie .pic {
+  position: relative;
+}
+#video #movie .pic img {
+  width: 100%;
+}
+#video #movie .pic .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#video .title {
+  display: inline-block;
+  height: 0.8rem;
+  font-size: 0.52rem;
+  line-height: 0.8rem;
+  color: #333;
+  vertical-align: middle;
+  overflow: hidden;
+}
+#foot {
+  width: 100%;
+  background: #EEE;
+  color: #AAA;
+  font-size: 0.6rem;
+  text-align: center;
+  border-top: 2px solid #CCC;
+}
+#foot .computer {
+  margin: 0.8rem 0;
+}
+#foot .computer span {
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+  border: 1px solid #DDD;
+  border-radius: 0.1rem;
+  background: #ddd;
+  color: #999;
+  text-align: center;
+}
+#foot .shengming {
+  padding-bottom: 0.8rem;
+  font-size: 0.4rem;
+}
+/*# sourceMappingURL=danji.css.map */

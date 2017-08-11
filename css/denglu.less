@@ -1,0 +1,325 @@
+@r:50rem;
+a,
+input,
+button {
+    /*清除点击阴影*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+    /*清除按钮的圆角*/
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+body {
+    /*选中文字设置*/
+  margin: 0;
+  -webkit-user-select: none;
+    /*禁止文字缩放*/
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+body * {
+    /*文字设置*/
+  -webkit-user-select: none;
+  font-family: Helvetica;
+}
+p,ul,li,h2,h3,h4, h5, h6,a{
+    margin: 0;
+    padding: 0;
+}
+ul,li,a{
+    list-style: none;
+    text-decoration: none; 
+}
+
+span{
+    margin:0;
+    padding: 0;
+}
+
+
+//以上是默认样式
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.bg{
+    width: 100%;
+    height:1355/@r;
+  background: url(../img/zhuce/b3.jpg) no-repeat ;
+    background-size:cover ;  
+    opacity: 0.7;
+    top: -20/@r;
+    position: absolute;
+}
+.header{
+    position: relative;
+    width: 100%;
+    padding: 20/@r 0 0;
+    box-sizing: border-box;
+    height: 100/@r;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #ccc;
+   .header_text{
+     color: #616161;
+       font-size: 40/@r;
+       margin-right: 20/@r;
+   }
+   .header_back{
+       display: inline-block;
+       z-index: 22;
+       position: relative;
+      float: left;
+      margin-left: 20/@r;
+      margin-top: 10/@r;
+       width: 36/@r;
+       height:40/@r;
+       background: url(../img/zhuce/d2.png) no-repeat 0 -100/@r;
+       background-size:cover ;
+   }
+}
+
+.box{
+ width: 80%;
+ margin: 0 auto;
+ position: relative;
+ overflow: hidden;   
+ font-size: 42/@r;
+.user{//用户名开始
+margin-top:100/@r;
+position: relative;
+padding: 0;
+ .ge{
+    display: inline-block;
+       width: 78/@r;
+       border: 1px solid #ccc;
+       height:70/@r;
+       float: left;
+       box-sizing: border-box;
+       img{
+        width: 78/@r;
+       height:70/@r;  
+       }
+ }
+  #username{
+   width: 80%;
+   float: left;
+ padding-left:20/@r;
+   font-size: 40/@r;
+   background: #fff;
+   height:70/@r;   
+   box-sizing: border-box;
+   border-color: skyblue;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
+   outline: none;
+  } 
+}
+
+
+//用户名结束
+//这是删除
+.dele{
+   position: absolute;
+   right:50/@r;
+   top: 15/@r;
+   display: none;
+   img{
+       width: 40/@r;
+   }
+}
+//这是删除结束
+
+.pass{//密
+position: relative;
+ .ge{
+    display: inline-block;
+       width: 78/@r;
+       border: 1px solid #ccc;
+       height:70/@r;
+       float: left;
+       box-sizing: border-box;
+       img{
+        width: 78/@r;
+       height:70/@r;  
+       }
+ }
+  #password{
+   width: 80%;
+   float: left;
+ padding-left:20/@r;
+   font-size: 40/@r;
+   background: #fff;
+   height:70/@r;   
+   box-sizing: border-box;
+   border-color: skyblue;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
+   outline: none;
+  } 
+}//密码
+    
+ 
+.code{//验证码
+position: relative;
+ .ge{
+    display: inline-block;
+       width: 78/@r;
+       border: 1px solid #ccc;
+       height:70/@r;
+       float: left;
+       box-sizing: border-box;
+       img{
+        width: 78/@r;
+       height:70/@r;  
+       }
+ }
+  #code_input{
+   width: 40%;
+   float: left;
+ padding-left:20/@r;
+   font-size: 40/@r;
+   background: #fff;
+   height:70/@r;   
+   box-sizing: border-box;
+   border-color: skyblue;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
+   outline: none;
+  } 
+  }//验证码
+    
+   #code{//验证码
+   width: 37%;
+   float: left;
+   text-align: center;
+   font-size: 40/@r;
+   background: #fff;
+   height:70/@r;   
+   line-height: 70/@r;
+   box-sizing: border-box;
+   border-color: skyblue;
+   margin-left:20/@r;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
+   outline: none;
+  } //验证码结束
+  
+  .zhuce_btn{//这是注册按钮
+  width: 80%;  
+  margin-top:40/@r;
+  font-size: 40/@r;
+  margin: 0 auto;
+
+    a{
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      height: 70/@r;
+      color: #fff;
+      line-height: 70/@r;
+    background: deepskyblue;
+    }  
+  }
+  
+   #btn_inf{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 30/@r;
+        line-height:40/@r ;
+        height: 40/@r;
+        text-align: center;
+    }
+//这是注册按钮结束
+
+
+// 这是所有的提示样式 开始
+  .ts{
+      width: 80%;
+      height: 50/@r;
+      font-size: 36/@r;
+      padding-left: 80/@r;
+      text-align: left;
+      line-height: 50/@r;
+  
+  }// 这是所有的提示样式 结束
+  
+ .agree{//这是条款同意
+   width: 80%;
+   margin-top: 20/@r ;
+   margin-bottom: 40/@r;
+   height: 60/@r;  
+  font-size: 26/@r;
+  padding-left: 60/@r;
+  span{
+      color: #F54638;
+  } 
+ }//这是条款同结束
+    
+ .enter{
+    //直接登录 
+    width: 80%;
+   margin-top: 80/@r ;
+   height: 60/@r;  
+   margin: 0 auto;
+   text-align: center;
+   a{
+       color: #025814; 
+    
+    }
+// 直接登陆结束
+ }   
+  .else{
+    width: 80%;
+    margin: 20/@r auto;
+    position: relative;
+    text-align: center;
+    border-top: 2/@r solid #ccc;
+ .fang{
+      position: absolute;
+      top:-20/@r;
+      display: block;
+      width: 100%;
+      color: #999;
+      font-size: 32/@r;
+      text-align: center;
+    }
+   
+    a{
+     display: inline-block;
+     padding-top: 60/@r;
+     margin-right:40/@r;
+     img{
+        width: 60/@r;
+        display:block;
+        vertical-align: middle;
+     }
+     span{
+        font-size: 30/@r;
+        color: #999;
+     }
+     
+    }
+     .wei{
+     
+    }
+  }
+  
+    
+  
+}//box的结束
+

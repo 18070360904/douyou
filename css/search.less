@@ -1,0 +1,187 @@
+@r: 50rem;
+a,
+input,
+button {
+    /*清除点击阴影*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+    /*清除按钮的圆角*/
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+body {
+    /*选中文字设置*/
+    margin: 0;
+    -webkit-user-select: none;
+    /*禁止文字缩放*/
+    -webkit-text-size-adjust: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+body * {
+    /*文字设置*/
+    -webkit-user-select: none;
+    font-family: Helvetica;
+}
+p,
+ul,
+li,
+h2,
+a {
+    margin: 0;
+    padding: 0;
+}
+ul,
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+}
+span {
+    margin: 0;
+    padding: 0;
+}
+//以上是默认样式
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.header {
+    width: 100%;
+    position: relative;
+    background: #1C63CF;
+    height: 90/@r;
+    #seach {
+        float: left;
+        width: 350/@r;
+        position: absolute;
+        top: 15/@r;
+        left: 30%;
+        height: 60/@r;
+        font-size: 32/@r;
+        vertical-align: middle;
+        border: 0;
+        color: darkslategray;
+        border: 1/@r solid deepskyblue;
+        border-radius: 10/@r;
+        box-sizing: border-box;
+        padding-left: 30/@r;
+    }
+    #logo_d {
+        float: left;
+        width: 200/@r;
+        height: 90/@r;
+        background: url("../img/d1.png") no-repeat 12/@r 16/@r;
+        background-size: 180/@r;
+    }
+    .logo_you {
+        float: right;
+        height: 90/@r;
+        line-height: 90/@r;
+        position: relative;
+        #logo_ge {
+            display: inline-block;
+            width: 90/@r;
+            height: 90/@r;
+            background: url("../img/i1.png") no-repeat 30/@r 20/@r;
+            background-size: 40/@r;
+        }
+        #logo_seach {
+            display: inline-block;
+            width: 90/@r;
+            height: 90/@r;
+            background: url("../img/d1.png") no-repeat 42/@r -75/@r;
+            background-size: 203/@r;
+        }
+    }
+}
+//header
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+//这是搜索框的按钮
+#list{
+  position: absolute;
+  border: 1px solid #ccc;  
+  top: 90/@r; 
+  width: 47%;
+   background: #FFFFFF;
+   left: 30%;
+  a{
+    padding-left: 20/@r;
+      font-size: 30/@r;
+      color: #000000;
+  }
+}
+
+
+
+
+//按钮结束
+
+//热门搜索
+.ren {
+    font-size: 32/@r;
+    color: darkslategray;
+    span {
+        border: 1/@r solid #000;
+        border-left-radius: 20%;
+    }
+}
+.tags {
+    padding: 21/@r 0 0 26/@r;
+}
+.tags h2 {
+    line-height: 54/@r;
+    font-size: 28/@r;
+}
+.tags label {
+    float: left;
+    line-height: 50/@r;
+    margin: 10/@r 14/@r 10/@r 3/@r;
+}
+.tags label input {
+    display: none;
+}
+.tags label span {
+    float: left;
+    font-size: 30/@r;
+    border: 1/@r solid #cdd6e1;
+    padding: 0 12/@r;
+    border-radius: 26/@r;
+}
+.huo {
+    color: #F60;
+}
+.tags input:checked+span {
+    border-color: #3c9bbb;
+    background-color: #3c9bbb;
+    color: #fff;
+}
+
+//热门搜索结束
+
+//视频
+#vd{
+   
+margin-top: 100/@r;
+width: 80%;
+margin-left:50/@r ;
+ p{
+   font-size: 36/@r;  
+   padding:20/@r  0;
+   
+ }
+}
+
+
+//视频结束
+
+
+
+

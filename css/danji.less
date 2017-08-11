@@ -1,0 +1,490 @@
+@r:50rem;
+a,
+input,
+button {
+    /*清除点击阴影*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+    /*清除按钮的圆角*/
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+body {
+    /*选中文字设置*/
+  margin: 0;
+  -webkit-user-select: none;
+    /*禁止文字缩放*/
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+body * {
+    /*文字设置*/
+  -webkit-user-select: none;
+  font-family: Helvetica;
+}
+p,ul,li,h2,h3,h4, h5, h6,a{
+    margin: 0;
+    padding: 0;
+}
+ul,li,a{
+    list-style: none;
+    text-decoration: none; 
+}
+
+span{
+    margin:0;
+    padding: 0;
+}
+
+
+//以上是默认样式
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+//回到顶部
+#arrow{
+    position:fixed;
+    z-index: 99;
+     width: 100/@r;
+    height:90/@r;
+  bottom:20%;
+    right: 0;
+    border-radius: 6/@r;
+    background: #000;
+    opacity: 0.3;
+    display: none;
+#aimg{
+  position:absolute ;
+  z-index: 2;
+    width: 100/@r;
+    height:80/@r;
+    top: 0;
+    right:0;
+    border-radius: 12/@r;
+     background: url(../img/j1.png) 90% 33% no-repeat;
+    background-size: 300/@r 300/@r;
+}
+}
+//回到顶部
+
+
+.header{
+    width: 100%;
+   position: relative; 
+   background: #1C63CF;
+   height: 90/@r;  
+   overflow: hidden;
+ .header_title{
+    float: left;
+     color: #FFF;
+     font-weight:600;
+    overflow: hidden;
+    line-height: 90/@r;
+    font-size: 36/@r;
+    width: 400/@r;  
+    height: 90/@r;
+    a{
+        color: #fff;
+    }
+  }  
+   .logo_you{
+     float:right;  
+     height: 90/@r;
+     #logo_ge{
+     display:inline-block;
+      width: 90/@r; 
+      height: 90/@r;  
+      background: url(../img/i1.png) no-repeat 30/@r 20/@r;
+        background-size:40/@r ;
+     }
+      #logo_seach{
+       display:inline-block;
+      width: 90/@r; 
+      height: 90/@r;  
+      background: url(../img/d1.png) no-repeat 42/@r -75/@r;  
+      background-size:203/@r ;
+      }
+    }
+}//header
+  //单击导航栏
+.danji_nav{
+width: 100%;  
+height: 80/@r;
+line-height: 80/@r;
+ a{
+     width: 18%;
+     display: inline-block;
+     color: #666;
+     font-size: 32/@r;
+     text-align: center;
+ }   
+  .active{
+    font-weight: bold;
+    color: #5FBA14; 
+  }  
+    
+}
+//单击导航栏结束
+
+//轮播图开始
+//轮播图开始
+  .swiper-container {
+        width: 100%;
+        height:500/@r;
+        a{
+            width: 100%;
+           img{
+             width: 100%; 
+             height:500/@r          
+           }
+        }
+     
+    }
+    .swiper-slide {
+        text-align:right;
+        font-size: 18px;
+        background: #fff;
+       p{
+           width:60%;
+           height: 50/@r;
+           overflow: hidden;
+           position: absolute;
+           bottom: 10/@r;
+           color:#fff;
+           left: 20/@r;
+       }        
+    }
+.swiper-pagination{
+    text-align: right;
+}
+
+//  轮播图结束
+//回到顶部
+.arrow{
+    position: fixed;
+    z-index: 1;
+     width: 100/@r;
+    height:90/@r;
+   bottom: 0;
+    right: 0;
+    border-radius: 6/@r;
+    background: #000;
+    opacity: 0.3;
+.aimg{
+  position:absolute ;
+  z-index: 2;
+    width: 100/@r;
+    height:80/@r;
+    top: 0;
+    right:0;
+    border-radius: 12/@r;
+    background: url(../img/j1.png) -92px -35px no-repeat;
+    background-size: 300/@r 300/@r;
+}
+}
+//回到顶部
+
+
+.common_pic{
+     position: relative;
+    z-index: 0;
+    display: block;
+    width: 94%;
+    height: auto;
+     padding: 20/@r 20/@r 10/@r 20/@r;
+    border-bottom: 1/@r solid #EEE;
+    color: #333;
+    text-decoration: none;
+    margin-right: 20/@r;
+   img{
+       width: 100%;
+       height: 210/@r;
+       display: block;
+   }
+   .ren_title{
+   font-size: 36/@r;   
+   overflow: hidden;
+  }
+  .ren_btn{
+      line-height: 46/@r;
+      padding: 20/@r 0;
+      font-size: 28/@r;
+   span{
+   color: #FFF;
+  opacity: 0.3; 
+   font-size: 28/@r;
+ display: inline-block; 
+ padding:2.5/@r 15/@r;   
+   }
+   .djl{
+       background: #0077FF; 
+   }
+   p{
+    float: right;
+    color: #999;
+   }
+  } 
+   
+ }//ren   
+ 
+ 
+  .common_pic{//这是大图链接的开始
+     position: relative;
+    z-index: 0;
+    display: block;
+    width: 94%;
+    height: auto;
+     padding: 20/@r 20/@r 10/@r 20/@r;
+    border-bottom: 1/@r solid #EEE;
+    color: #333;
+    text-decoration: none;
+    margin-right: 20/@r;
+   img{
+       width: 100%;
+       height: 210/@r;
+       display: block;
+   }
+   .ren_title{
+   font-size: 36/@r;   
+   overflow: hidden;
+  }
+  .ren_btn{
+      line-height: 46/@r;
+      padding: 20/@r 0;
+      font-size: 28/@r;
+   span{
+   color: #FFF;
+  opacity: 0.3; 
+   font-size: 28/@r;
+ display: inline-block; 
+ padding:2.5/@r 15/@r;   
+   }
+   .djl{
+       background: #0077FF; 
+   }
+   p{
+    float: right;
+    color: #999;
+   }
+  } 
+   
+ }//ren 大图连接结束  
+  
+  .common_heng{  //小图链接开始
+      display: block;
+    position: relative;
+    z-index: 0;
+    width: 96%;
+    height: auto;
+    padding: 0.5em 2%;
+    border-bottom: 1px solid #EEE;
+    color: #333;
+    text-decoration: none;
+  img{
+     display: block;
+    float: left;
+    width: 30%;
+    height: auto;
+    margin: 0 3% 0 0;
+  } 
+   .heng_right{
+    float: left;  
+    width: 60%; 
+   .heng_title{
+    color: #333; 
+    font-size: 30/@r; 
+    margin-bottom: 20/@r;
+   }
+   .heng_bottom{
+       width: 100%;
+       padding-top: 10/@r;
+       line-height: 30/@r;
+       vertical-align: middle;
+ span{
+   color: #FFF;
+  opacity: 0.3; 
+ display: inline-block; 
+ padding:2.5/@r 15/@r;   
+  font-size: 28/@r;
+   }
+   .wyou{
+  background: #C000E1;     
+   }
+   
+   p{
+    float: right;
+    font-size: 28/@r;
+    color: #999;
+   }
+   }
+       }
+   
+     
+}//common_heng//小图链接结束
+ 
+
+
+//热门单机
+#danji{
+ .danji_title{
+      border-bottom: 1px solid #EDEDED;
+      margin-bottom: 20/@r;
+   h6{
+       float: left;
+     padding: 20/@r 0;
+    width: 25%;
+   border-bottom: 3px solid #5FBA14;
+   color: #5FBA14;
+    text-align: center;     
+    } 
+    a{
+        float: right;
+        color: #a5a5a5;
+        font-size:34/@r;
+        margin-top: 20/@r;
+        padding: 10/@r 20/@r;
+    }
+  }
+  .danji_img{
+      width: 95%;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 20/@r 20/@r;
+      a{
+     float: left;
+    width: 25%;
+    padding: 0 0 10/@r;
+    margin: 0 25/@r;
+    color: #333;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    overflow: hidden;
+        img{
+          display: block;
+          width: 100%;  
+        }
+     span{
+         display: inline-block;
+        font-size: 26/@r;
+        height: 60/@r;
+        vertical-align: middle;
+        overflow: hidden;
+     }   
+      }
+  }
+  
+}
+//热门单机结束
+
+//更多公共
+ #more{
+    display: block;
+    width: 95%;
+    margin: 10/@r auto;
+    font-size: 32/@r;
+    line-height: 2em;
+    background: #eee;
+    color: #666;
+    text-align: center;
+    font-family: "Microsoft YaHei",Simsun;
+    
+    
+  }  
+//更多公共结束
+
+//标题公共
+.danji_title{
+      border-bottom: 1px solid #EDEDED;
+      margin-bottom: 20/@r;
+   h6{
+       float: left;
+     padding: 20/@r 0;
+    width: 25%;
+   border-bottom: 3px solid #5FBA14;
+   color: #5FBA14;
+    text-align: center;     
+    } 
+    a{
+        float: right;
+        color: #a5a5a5;
+        font-size:34/@r;
+        margin-top: 20/@r;
+        padding: 10/@r 20/@r;
+    }
+  }
+//标题公共结束
+
+//单机视频模块开始
+#video{
+width: 96%;
+padding: 10/@r 0;
+margin: 0 auto;
+overflow: hidden;
+ #movie{
+     float:left;
+    display: block;
+    width: 48%;
+    margin: 0 5/@r 10/@r;
+    text-align: center;
+    overflow: hidden;
+   .pic{
+       position: relative;
+       img{
+           width: 100%;
+       }
+       .cover{
+           position: absolute;
+           top: 0;
+           left: 0;
+       }
+   } 
+ }
+   
+ .title{
+     display: inline-block;
+    height:40/@r;
+    font-size:26/@r;
+    line-height: 40/@r;
+    color: #333;
+    vertical-align: middle;
+    overflow: hidden;
+ }  
+}
+
+//单机视频模块结束
+
+
+//尾部开始
+#foot{
+ width: 100%;  
+background: #EEE;    
+  color: #AAA; 
+  font-size: 30/@r;
+  text-align: center;
+ border-top: 2px solid #CCC;
+ .computer{
+     margin: 40/@r 0;
+   span{
+     display: inline-block;
+    padding: 10/@r 20/@r;
+    border: 1px solid #DDD;
+    border-radius: 5/@r;
+    background: #ddd;
+    color: #999;
+    text-align: center;     
+}
+     
+ }
+ .shengming{
+   padding-bottom: 40/@r;
+     font-size:20/@r;
+ }
+ 
+}
+//尾部结束
+

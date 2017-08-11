@@ -1,0 +1,766 @@
+@r:50rem;
+a,
+input,
+button {
+    /*清除点击阴影*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+    /*清除按钮的圆角*/
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+body {
+    /*选中文字设置*/
+  margin: 0;
+  -webkit-user-select: none;
+    /*禁止文字缩放*/
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+body * {
+    /*文字设置*/
+  -webkit-user-select: none;
+  font-family: Helvetica;
+}
+p,ul,li,h2,h3,h4, h5, h6,a{
+    margin: 0;
+    padding: 0;
+}
+ul,li,a{
+    list-style: none;
+    text-decoration: none; 
+}
+
+span{
+    margin:0;
+    padding: 0;
+}
+
+
+//以上是默认样式
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+//回到顶部
+#arrow{
+    position:fixed;
+    z-index: 99;
+     width: 100/@r;
+    height:90/@r;
+  bottom:20%;
+    right: 0;
+    border-radius: 6/@r;
+    background: #000;
+    opacity: 0.3;
+    display: none;
+#aimg{
+  position:absolute ;
+  z-index: 2;
+    width: 100/@r;
+    height:80/@r;
+    top: 0;
+    right:0;
+    border-radius: 12/@r;
+      background: url(../img/j1.png) 90% 33% no-repeat;
+    background-size: 300/@r 300/@r;
+}
+}
+//回到顶部
+
+.header{
+    width: 100%;
+   position: relative; 
+   background: #1C63CF;
+   height: 90/@r;  
+   overflow: hidden;
+ .header_title{
+    float: left;
+     color: #FFF;
+     font-weight:600;
+    overflow: hidden;
+    line-height: 90/@r;
+    font-size: 36/@r;
+    width: 400/@r;  
+    height: 90/@r;
+    a{
+        color: #fff;
+    }
+  }  
+   .logo_you{
+     float:right;  
+     height: 90/@r;
+     #logo_ge{
+     display:inline-block;
+      width: 90/@r; 
+      height: 90/@r;  
+      background: url(../img/i1.png) no-repeat 30/@r 20/@r;
+        background-size:40/@r ;
+     }
+      #logo_seach{
+       display:inline-block;
+      width: 90/@r; 
+      height: 90/@r;  
+      background: url(../img/d1.png) no-repeat 42/@r -75/@r;  
+      background-size:203/@r ;
+      }
+    }
+}//header
+
+.content_title{
+    width: 100%;
+    
+  .title{
+      font-size:40/@r;   
+      color: #333; 
+      font-weight: bold;
+      padding: 20/@r 20/@r;
+  } 
+  .info{
+      font-size: 15/@r;
+      color: #999;
+    padding: 10/@r 15/@r;
+  } 
+}
+
+.height{
+    width: 100%;
+    img{
+        display: block;
+        width: 100%;
+    }
+}
+//这是详细内容的模板
+#word{
+    width: 96%;
+    height:4000/@r;
+    overflow: hidden;
+    margin: 0 auto;
+    color: #333;
+    padding: 20/@r 20/@r;
+    font-size: 30/@r;
+    overflow: hidden;
+    box-sizing: border-box;
+    line-height: 40/@r;
+    p{
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+    .img{
+       margin-bottom: 60/@r;
+    }
+}
+
+
+//这是详细内容的模板的结束
+.common_heng{  //小图链接开始
+      display: block;
+    position: relative;
+    z-index: 0;
+    width: 96%;
+    height: auto;
+    padding: 0.5em 2%;
+    border-bottom: 1px solid #EEE;
+    color: #333;
+    text-decoration: none;
+  img{
+     display: block;
+    float: left;
+    width: 30%;
+    height: auto;
+    margin: 0 3% 0 0;
+  } 
+   .heng_right{
+    float: left;  
+    width: 60%; 
+   .heng_title{
+    color: #333; 
+    font-size: 30/@r; 
+    margin-bottom: 20/@r;
+   }
+   .heng_bottom{
+       width: 100%;
+       padding-top: 10/@r;
+       line-height: 30/@r;
+       vertical-align: middle;
+ span{
+   color: #FFF;
+  opacity: 0.3; 
+ display: inline-block; 
+ padding:2.5/@r 15/@r;   
+  font-size: 28/@r;
+   }
+   .wyou{
+  background: #C000E1;     
+   }
+    .djl{ 
+      background: #07F;
+      }
+   p{
+    float: right;
+    font-size: 28/@r;
+    color: #999;
+   }
+   }
+       }
+   
+     
+}//common_heng//小图链接结束
+ 
+
+
+
+//这是页数选择
+#change_page{
+position: relative;
+width: 94%;
+margin:40/@r auto;
+height: 70/@r;
+ background: #F9F9F9;
+  border: 2px solid #CCC;
+  border-radius:10/@r;
+//这是页数选择
+ #page{
+     
+   position: absolute;
+ background: #999; 
+ display: none;
+ top: -140/@r;
+ left: 0;
+ box-sizing: border-box;
+ padding: 15/@r;
+ width: 100%;
+ .box{
+     height: auto;
+     a{
+         vertical-align: middle;
+        display: inline-block;
+        text-align: center;
+        width: 80/@r;
+        height: 80/@r;
+        line-height: 80/@r;
+        background: #DDD;
+          color: #666;
+        box-sizing: border-box;
+        border: 1px solid #CCC;
+     }
+     .active{
+          color: #FFF;
+    background: #C00;
+    border: 1px solid #C00
+     }
+ }
+ .san{
+     width: 0;
+     height: 0;
+     border-top:18/@r solid #999;
+      border-right: 18/@r solid transparent;
+     border-left: 18/@r solid transparent;
+     position: absolute;
+     left: 30/@r;
+     bottom: -16/@r;
+      }
+ }
+ //这是页数选择结束
+ #select_active{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background:#DDD;
+    width:80/@r;
+    height: 70/@r;
+    border-right: 1px solid #CCC;
+    border-radius:10/@r 0 0 10/@r;   
+    p{
+     width: 50/@r;
+        height: 50/@r;
+        margin: 10/@r  auto 10/@r;
+     background: url(../img/details/b1.png)  no-repeat;
+     background-size:cover ;
+    } 
+ }
+ #next_page{
+   display: block;
+   width: 90%;
+   margin: 0 auto;  
+   height: 70/@r;
+   line-height: 70/@r;
+   font-size:30/@r;
+   color: #666;
+   text-align: center;
+ } 
+ #all_page{
+  position: absolute;
+  top: 0;
+  right: 0; 
+   border-right: 1px solid #CCC;
+   background:#DDD;
+   width: 80/@r;
+   text-align: center;
+   font-size: 30/@r;
+   height: 70/@r;
+    color: #666;  
+    line-height: 70/@r;
+ }
+  
+}//change_page
+//这是页数结束-->
+
+//标题公共
+.danji_title{
+      border-bottom: 1px solid #EDEDED;
+      margin-bottom: 20/@r;
+   h6{
+       float: left;
+     padding: 20/@r 0;
+    width: 25%;
+   border-bottom: 3px solid #5FBA14;
+   color: #5FBA14;
+    text-align: center;     
+    } 
+    a{
+        float: right;
+        color: #a5a5a5;
+        font-size:34/@r;
+        margin-top: 20/@r;
+        padding: 10/@r 20/@r;
+    }
+  }
+//标题公共结束
+
+//关联游戏模块
+#guang{
+.remen_pic{
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #E4E4E4;
+  overflow: hidden;
+  padding: 20/@r;  
+  img{
+    display: block;
+    float: left;
+    width: 40%;
+    margin: 0 3% 0 0;
+  
+  }
+  .renmen_top{
+      height: 60/@r;
+      line-height: 60/@r;
+       font-size: 36/@r;  
+   .one{
+     font-size: 36/@r;  
+     color: #1C1C1C;
+   }  
+   .two{
+       color: #ff9712;
+       float: right;
+   } 
+  }
+  .class_bottom{
+     color: #707070;
+    font-size: 25/@r;
+    height: 80/@r;  
+    box-sizing: border-box;
+    position: relative;
+  .set_left{
+    width: 45%; 
+    overflow: hidden;    
+    span{
+       display: block;
+       height: 30/@r;
+       overflow: hidden;
+       line-height: 30/@r;
+        em{
+          font-style: normal;
+           color: red;    
+        }
+    } 
+  }
+  .setup_left{
+    position: absolute;
+   right:260/@r;
+    bottom: -50/@r;
+    text-align: center;
+    width:150/@r;
+    line-height:60/@r;
+    height:60/@r;
+        color: #333;
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    }
+     .setup_right{
+    position: absolute;
+   right:10/@r;
+    bottom: -50/@r;
+    text-align: center;
+    width:150/@r;
+    line-height:60/@r;
+    height:60/@r;
+        color: #333;
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    }
+  }
+}
+
+
+
+
+
+
+
+}
+//关联游戏结束
+
+//相关资讯开始
+#xiang{
+    
+.common_heng{  //小图链接开始
+      display: block;
+    position: relative;
+    z-index: 0;
+    width: 96%;
+    height: auto;
+    padding: 0.5em 2%;
+    border-bottom: 1px solid #EEE;
+    color: #333;
+    text-decoration: none;
+  img{
+     display: block;
+    float: left;
+    width: 30%;
+    height: auto;
+    margin: 0 3% 0 0;
+  } 
+   .heng_right{
+    float: left;  
+    width: 60%; 
+   .heng_title{
+    color: #333; 
+    font-size: 30/@r; 
+    margin-bottom: 20/@r;
+   }
+   .heng_bottom{
+       width: 100%;
+       padding-top: 10/@r;
+       line-height: 30/@r;
+       vertical-align: middle;
+ span{
+   color: #FFF;
+  opacity: 0.3; 
+ display: inline-block; 
+ padding:2.5/@r 15/@r;   
+  font-size: 28/@r;
+   }
+  .djl{ 
+      background: #07F;
+      }
+   .wyou{
+  background: #C000E1;     
+   }
+   
+   p{
+    float: right;
+    font-size: 28/@r;
+    color: #999;
+   }
+   }
+       }
+   
+     
+}//common_heng//小图链接结束
+  .pic_row{
+      width:96%;
+      margin: 0 auto;
+   div{
+       margin-right: 10/@r;
+        text-align: center;
+       float: left;
+       width: 30%;
+       img{
+           display: block;
+           width: 100%;
+       }
+     
+       span{
+           display: inline-block;
+           text-align: center;
+          color:#000;
+          height: 40/@r;
+          line-height: 40/@r;
+          overflow: hidden;
+          font-size:30/@r;
+       }
+   }
+    
+  }   
+}//xiang
+
+
+//热门推荐开始
+#tuijian{
+ width: 96%;   
+margin: 0 auto;    
+ .hot{
+     a{
+          text-align: center;
+          margin-right: 20/@r;
+         display: inline-block;
+         width: 45%;
+       img{
+           display: block;
+           width: 100%;
+       }  
+        span{
+          width:100%;
+          display: block;
+          line-height: 40/@r;
+          height: 60/@r;
+          color: #000;
+          font-size: 30/@r;
+          text-align: center;
+        } 
+     }
+ }   
+}
+
+//热门推荐结束
+
+//登录区开始
+#comment{
+     margin-top: 20/@r;
+   width: 96%;
+   margin: 0 auto;
+   font-size: 32/@r;
+  #comment_first{
+    background: #eee; 
+    padding-bottom:20/@r ;
+   }
+ #comment_title{
+  padding: 10/@r; 
+  #comment_number{
+   padding: 5/@r 12/@r;
+   background-color: #4398ed; 
+   color: #fff;
+   text-align: center;
+   border-radius:5/@r;
+  }
+  #comment_xiao{
+     width: 0;
+     display: inline-block;
+     height: 0;
+     border-top: 15/@r solid transparent;
+      border-left: 15/@r  solid #4398ed;
+      border-bottom: 15/@r solid transparent;
+  }
+  #comment_text{
+     color: #000;
+    font-size: 40/@r;
+    font-weight: 600;
+    vertical-align: middle; 
+  }
+  
+  
+  
+  #comment_login{
+      color: #000;
+    font-size: 40/@r;
+    font-weight: 600;
+    vertical-align: middle; 
+    float: right;
+    margin-right:20/@r;
+  }
+//这是退出
+  #exit{
+    color: #000;
+    font-size: 40/@r;
+    font-weight: 600;
+    vertical-align: middle; 
+    float: right;
+    margin-right:20/@r;
+    color: #fff;
+    opacity: 0.4;
+    background: #FF2730;
+  }
+  
+  
+  
+  
+  
+//这是退出结束
+ }
+ 
+ 
+ 
+// 这是留言面板
+#comment_input{
+ 
+    margin: 0 auto;
+   
+  
+#text_into{
+    border: 1px solid #4398ed;
+    border-radius:10/@r;
+    color: #000;
+    width:96%;
+    padding-left: 20/@r;
+    font-size: 32/@r;
+    font-weight: 500;
+    height: 500/@r;
+    text-align: left;
+    text-decoration: none;
+    list-style: none;
+       
+}
+}
+// 这是留言面板结束
+
+
+
+#comment_new{
+    width: 100%;
+    line-height: 50/@r;
+    vertical-align: middle;
+
+#comment_word{
+    color: #000;
+    font-size: 40/@r;
+    float: left;
+    margin-left:20/@r ;
+    font-weight: 600;
+    vertical-align: middle; 
+}
+
+ .comment_icon{
+    width: 50/@r;
+    vertical-align: middle;
+    height: 50/@r;
+    display: inline-block;  
+    background: url(../img/details/j1.png) no-repeat;
+    background-size:cover ;
+ }
+//这是发表按钮
+#fa{
+   background:#4398ed; 
+   color: #fff; 
+   float:right;
+   padding: 0 10/@r;
+   border-radius: 10/@r;
+}
+//发表结束
+}
+#input_inf{
+    height: 80/@r;
+    width: 100%;
+    line-height: 80/@r;
+    text-align: center;
+    font-size: 32/@r;
+}
+
+}
+//这是书写区
+#shuxie{
+  div{
+     word-spacing:1em ;   
+     p{
+       height:60/@r;
+   padding-left: 20/@r; 
+   padding-top: 20/@r;
+   padding-bottom: 20/@r;
+
+     }
+  }  
+}
+//这是书写区结束
+
+
+//登录区结束
+
+.common_pic{//这是大图链接的开始
+     position: relative;
+    z-index: 0;
+    display: block;
+    width: 94%;
+    height: auto;
+     padding: 20/@r 20/@r 10/@r 20/@r;
+    border-bottom: 1/@r solid #EEE;
+    color: #333;
+    text-decoration: none;
+    margin-right: 20/@r;
+   img{
+       width: 100%;
+       height: 210/@r;
+       display: block;
+   }
+   .ren_title{
+   font-size: 36/@r;   
+   overflow: hidden;
+  }
+  .ren_btn{
+      line-height: 46/@r;
+      padding: 20/@r 0;
+      font-size: 28/@r;
+   span{
+   color: #FFF;
+  opacity: 0.3; 
+   font-size: 28/@r;
+ display: inline-block; 
+ padding:2.5/@r 15/@r;   
+   }
+   .djl{
+       background: #0077FF; 
+   }
+   p{
+    float: right;
+    color: #999;
+   }
+  } 
+   
+ }//ren 大图连接结束  
+
+//最新资讯开始
+
+
+
+
+//最新资讯结束
+
+
+//尾部开始
+#foot{
+ width: 100%;  
+background: #EEE;    
+  color: #AAA; 
+  font-size: 30/@r;
+  text-align: center;
+ border-top: 2px solid #CCC;
+ .computer{
+     margin: 40/@r 0;
+   span{
+     display: inline-block;
+    padding: 10/@r 20/@r;
+    border: 1px solid #DDD;
+    border-radius: 5/@r;
+    background: #ddd;
+    color: #999;
+    text-align: center;     
+}
+     
+ }
+ .shengming{
+   padding-bottom: 40/@r;
+     font-size:20/@r;
+ }
+ 
+}
+//尾部结束
+

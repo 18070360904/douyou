@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<script type="text/javascript" src="js/jquery-1.10.1.min.js">
+			
+		</script>
+	</head>
+	<body>
+		<div id="name">
+			<input type="text" id="put"/>
+			<button type="button" id="send">点我</button>
+		</div>
+		<ul id="name">
+			
+		</ul>
+	</body>
+	<script type="text/javascript">
+		$('#send').click(function(){
+			var Yu=$('#put').val();
+		   var er='<li>'+Yu+'</li>'
+		$('#name').append(er);
+		$.ajax({
+			type:"post",
+			url:"http://www.tuling123.com/openapi/api",
+			dataType:"JSON",
+			jsonp:"callback",
+			data:{
+				'key':'b8680786b6714ae4953c72d6cde9c556',
+				'info':$('#put').val(),
+				'userid':'12345678'
+			},
+			success:function(str){
+			var jiqi='<li>'+(str.text)+'</li>'	
+			$('#name').append(jiqi);
+			}
+			
+		})
+		$('#put').val("");
+		
+		});
+	</script>
+</html>

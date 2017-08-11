@@ -1,0 +1,721 @@
+@r:50rem;
+
+a,
+input,
+button {
+    /*清除点击阴影*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+    /*清除按钮的圆角*/
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+body {
+    /*选中文字设置*/
+  margin: 0;
+  -webkit-user-select: none;
+    /*禁止文字缩放*/
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+body * {
+    /*文字设置*/
+  -webkit-user-select: none;
+  font-family: Helvetica;
+}
+p,ul,li,h2,h3,h4, h5, h6,a{
+    margin: 0;
+    padding: 0;
+}
+ul,li,a{
+    list-style: none;
+    text-decoration: none; 
+}
+
+span{
+    margin:0;
+    padding: 0;
+}
+
+
+//以上是默认样式
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.wrap{
+  position: relative;
+  
+}
+//这是图灵机器人的开始
+#jiqi{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: 222;
+   width: 80/@r; 
+   height: 80/@r;
+   
+   img{
+       width: 100%;
+       height: 100%;
+       border-radius: 50%;
+   }
+}
+
+
+//图灵机器人结束
+//图灵界面
+
+#ji{
+ width: 100%;
+position: fixed;  
+ z-index: 666;
+ left: 100%;
+ transition: all 1s ease; 
+#roubt{
+ width: 100%;
+ height: 1500/@r; 
+ background: #1C1C1C;
+ opacity: 0.9;
+position: absolute;
+ 
+}
+#spenk{
+     width:90%;
+     height:1000/@r;
+     margin: 0 auto;
+     position: relative;
+     z-index: 777;
+     top: 100/@r;
+    background: #f3f3f3;
+     #shuru{
+     background: #fff;
+       width: 100%;
+      height: 3rem;
+    position: relative;
+       #tu{
+         width:120/@r;
+         height: 120/@r; 
+         border-radius: 50%; 
+         margin: 0 auto;
+       position: relative;
+            left: 40%;
+            top: 5%;
+       }
+       a{
+               position: relative;
+              left: 72%;
+              bottom: 40%;
+           img{
+               width: 40/@r;
+             height: 40/@r;
+           
+               }
+       }
+     }
+   .txt_list:after{
+      content:"" ;
+      display: block;   
+      clear: both;   
+     }
+   .txt_list{
+    padding: 0 27/@r;
+    width: 100%;
+    background: #f3f3f3;
+    box-sizing: border-box;
+    height: 17.2rem;
+    padding: 1.2rem 0.6rem 0;
+    overflow: auto;
+    position: absolute;
+    bottom: 0.4rem;
+    box-sizing: border-box;
+    .text_left{
+    border: 0;
+    padding: 0.4rem;
+   img{
+     float: left;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 0.6rem;
+    margin-bottom: 0.6rem;
+   }
+   p{
+     float: left;
+    max-width: 8rem;
+    background: #fff;
+    padding: 0.08rem 0.2rem;
+    border-radius: 0.16rem;
+    font-size: 0.64rem;
+    line-height: 1.2rem;
+    
+   }
+    }
+      li:after{
+        content:"";
+        display:block;
+        clear:both;
+    }
+    li{
+        color: #666;
+        float: left;
+        padding: 20/@r 0;
+        width: 100%;
+        border-bottom: 1px solid #f1f1f1;
+      .list_left{
+         width: 244/@r;
+          margin-right: 25/@r;
+          float: left;  
+         img {
+                width: 244/@r;
+                height: 142/@r;
+            }
+      }
+      .list_right{
+          float: left;
+    
+      h4{
+          width: 420/@r;
+          font-size: 58/@r;
+          color: #080808;
+      }
+      p{
+         width: 420/@r;
+         font-size: 28/@r;
+      }
+      span{
+          float: left;
+      }
+      .list_text_right{
+          float: right;
+          b{
+           float: left;
+           font-weight: normal;
+           margin-right: 5/@r;
+          }
+           i {
+             float: left;
+             width: 32/@r;
+             height: 28/@r;
+             margin-top: 6/@r;
+             background: url("../img/pinlun.png") no-repeat;
+                        background-size: cover;
+                    }
+      }
+        }
+    }
+    
+    
+          }//txt_list
+   form{ 
+     background: #fff;
+    width: 100%;
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem; 
+    input{
+     width:85%;
+    height: 1.6rem;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    float: left;
+    padding: 0.4rem;
+    font-size: 0.64rem;
+    border-radius: 0 0 0 0.16rem;
+    }
+    button{
+     float: left;
+    border: 0;
+    background: #222;
+    color: #fff;
+    width:15%;
+    height: 1.6rem;
+    }
+     }          
+ }
+}
+.me{
+        border:0;
+        padding:0;
+        padding:20/@r;
+        height:auto;
+       img{
+           float:right;
+           width: 60/@r;
+           height:60/@r;
+           border-radius:50%;
+           overflow:hidden;
+           margin-left:30/@r;
+            margin-bottom:30/@r;
+       }
+       p{
+            max-width:400/@r;
+           background:#fff;
+            padding:4/@r 10/@r;
+           border-radius:8/@r;
+           float:right;
+           font-size:32/@r;
+           line-height:60/@r;
+       }
+    }
+//图灵界面结束
+
+
+//轮播图开始
+  .swiper-container {
+        width: 100%;
+        height:500/@r;
+        a{
+            width: 100%;
+           img{
+             width: 100%; 
+             height:500/@r          
+           }
+        }
+     
+    }
+    .swiper-slide {
+        text-align:right;
+        font-size: 18px;
+        background: #fff;
+       p{
+           width:60%;
+           height: 50/@r;
+           overflow: hidden;
+           position: absolute;
+           bottom: 10/@r;
+           color:#fff;
+           left: 20/@r;
+       }        
+    }
+.swiper-pagination{
+    text-align: right;
+}
+
+//  轮播图结束
+
+//回到顶部
+#arrow{
+    position:fixed;
+    z-index: 99;
+     width: 100/@r;
+    height:90/@r;
+  bottom:20%;
+    right: 0;
+    border-radius: 6/@r;
+    background: #000;
+    opacity: 0.3;
+    display: none;
+#aimg{
+  position:absolute ;
+  z-index: 2;
+    width: 100/@r;
+    height:80/@r;
+    top: 0;
+    right:0;
+    border-radius: 12/@r;
+    background: url(../img/j1.png) 90% 33% no-repeat;
+    background-size: 300/@r 300/@r;
+}
+}
+//回到顶部
+.zixun{
+    width: 100%;
+    height: 210/@r;
+    padding: 40/@r;
+    margin:0 auto;
+    box-sizing: border-box;
+    a{
+       width: 12.5%;
+        color: #1C1C1C;
+        text-align: center;
+        font-size:30/@r;
+        display: inline-block;
+        margin: 0 18/@r;
+        line-height: 60/@r;
+        vertical-align:middle;
+        img{
+            width: 100%;
+            display: block;
+           vertical-align:middle;  
+        }
+    }
+    
+}
+
+.line{
+    width: 100%;
+    height: 25/@r;
+    background: #f2f2f2;
+}
+
+.content{
+    width: 100%;
+    
+ .common_pic{//这是大图链接的开始
+     position: relative;
+    z-index: 0;
+    display: block;
+    width: 94%;
+    height: auto;
+     padding: 20/@r 20/@r 10/@r 20/@r;
+    border-bottom: 1/@r solid #EEE;
+    color: #333;
+    text-decoration: none;
+    margin-right: 20/@r;
+   img{
+       width: 100%;
+       height: 210/@r;
+       display: block;
+   }
+   .ren_title{
+   font-size: 36/@r;   
+   overflow: hidden;
+  }
+  .ren_btn{
+      line-height: 46/@r;
+      padding: 20/@r 0;
+      font-size: 28/@r;
+   span{
+   color: #FFF;
+  opacity: 0.3; 
+   font-size: 28/@r;
+ display: inline-block; 
+ padding:2.5/@r 15/@r;   
+   }
+   .djl{
+       background: #0077FF; 
+   }
+   p{
+    float: right;
+    color: #999;
+   }
+  } 
+   
+ }//ren 大图连接结束  
+  
+  .common_heng{  //小图链接开始
+      display: block;
+    position: relative;
+    z-index: 0;
+    width: 96%;
+    height: auto;
+    padding: 0.5em 2%;
+    border-bottom: 1px solid #EEE;
+    color: #333;
+    text-decoration: none;
+  img{
+     display: block;
+    float: left;
+    width: 30%;
+    height: auto;
+    margin: 0 3% 0 0;
+  } 
+   .heng_right{
+    float: left;  
+    width: 60%; 
+   .heng_title{
+    color: #333; 
+    font-size: 30/@r; 
+    margin-bottom: 20/@r;
+   }
+   .heng_bottom{
+       width: 100%;
+       padding-top: 10/@r;
+       line-height: 30/@r;
+       vertical-align: middle;
+ span{
+   color: #FFF;
+  opacity: 0.3; 
+ display: inline-block; 
+ padding:2.5/@r 15/@r;   
+  font-size: 28/@r;
+   }
+   .djl{ 
+      background: #07F;
+      }
+   .wyou{
+  background: #C000E1;     
+   }
+   
+   p{
+    float: right;
+    font-size: 28/@r;
+    color: #999;
+   }
+   }
+       }
+   
+     
+}//common_heng//小图链接结束
+ 
+  }//content
+  #more{
+    display: block;
+    width: 95%;
+    margin: 10/@r auto;
+    font-size: 32/@r;
+    line-height: 2em;
+    background: #eee;
+    color: #666;
+    text-align: center;
+    font-family: "Microsoft YaHei",Simsun;
+  }  
+// 热门手游模块 
+#remen{
+  .renmen_box{
+     width: 95%; 
+     margin: 0 auto;
+     padding: 25/@r 0;
+     overflow: hidden;
+  } 
+    
+ .remen_title{
+        border-bottom: 1px solid #EDEDED;
+        margin-bottom: 20/@r;
+    h6{
+     padding: 20/@r 0;
+    width: 25%;
+   border-bottom: 3px solid #5FBA14;
+   color: #5FBA14;
+    text-align: center;     
+    } 
+ }
+ .renmen_feng{
+  a{
+   width: 21%;
+   color: #1C1C1C; 
+   float: left;
+   text-align: center;
+   margin: 12/@r;
+   span{
+       display: inline-block;
+       font-size: 30/@r;
+       vertical-align: middle;
+   }  
+  } 
+     
+ }//renmen_feng
+.remen_pic{
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #E4E4E4;
+  overflow: hidden;
+  padding: 20/@r;  
+  img{
+    display: block;
+    float: left;
+    width: 22%;
+    margin: 0 3% 0 0;
+    border-radius: 15%;
+  }
+  .renmen_top{
+      height: 60/@r;
+      line-height: 60/@r;
+       font-size: 36/@r;  
+   .one{
+     font-size: 36/@r;  
+     color: #1C1C1C;
+   }  
+   .two{
+       color: #ff9712;
+       float: right;
+   } 
+  }
+  .class_bottom{
+     color: #707070;
+    font-size: 25/@r;
+    height: 80/@r;  
+    box-sizing: border-box;
+    position: relative;
+  .set_left{
+    width: 45%; 
+    overflow: hidden;    
+    span{
+       display: block;
+       height: 40/@r;
+       overflow: hidden;
+       line-height: 40/@r;
+        margin-bottom: 10/@r;
+    } 
+  }
+  .setup{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    width:150/@r;
+    line-height: 72/@r;
+    height:72/@r;
+    border: 1px solid #DDD;
+    box-sizing: border-box;
+    background: #EEE;
+    color: #666;    
+    }
+  }
+}
+
+   
+   }   
+ // 热门手游模块  结束 
+
+//热门单机
+#danji{
+ .danji_title{
+      border-bottom: 1px solid #EDEDED;
+      margin-bottom: 20/@r;
+   h6{
+       float: left;
+     padding: 20/@r 0;
+    width: 25%;
+   border-bottom: 3px solid #5FBA14;
+   color: #5FBA14;
+    text-align: center;     
+    } 
+    a{
+        float: right;
+        color: #a5a5a5;
+        font-size:34/@r;
+        margin-top: 20/@r;
+        padding: 10/@r 20/@r;
+    }
+  }
+  .danji_img{
+      width: 95%;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 20/@r 20/@r;
+      a{
+     float: left;
+    width: 25%;
+    padding: 0 0 10/@r;
+    margin: 0 25/@r;
+    color: #333;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    overflow: hidden;
+        img{
+          display: block;
+          width: 100%;  
+        }
+     span{
+         display: inline-block;
+        font-size: 26/@r;
+        height: 60/@r;
+        vertical-align: middle;
+        overflow: hidden;
+     }   
+      }
+  }
+  
+}
+//热门单机结束
+
+//游戏视频开始
+#game{
+ .biao_title{
+        border-bottom: 1px solid #EDEDED;
+        margin-bottom: 20/@r;
+    h6{
+     padding: 20/@r 0;
+    width: 25%;
+   border-bottom: 3px solid #5FBA14;
+   color: #5FBA14;
+    text-align: center;     
+    } 
+ }
+.game_box{
+    width: 100%;
+a{
+    
+  width: 96%; 
+  font-size: 30/@r;
+  display: block;
+  margin: 0 auto;
+  padding: 20/@r;
+  height: auto;
+  img{
+      float: left;
+      display: block;
+      width: 25%;
+      margin-right: 20/@r;
+  }
+  .game_right{
+      color:#333;
+      .game_top{
+       height:40/@r; 
+      }
+     .game_bottom{
+       height: 80/@r;  
+      vertical-align: middle;
+      .danji{
+           vertical-align: middle;
+             background: #0077FF; 
+          margin-top:40/@r ;
+           color: #FFF;
+           padding: 2.5/@r 15/@r;
+           font-size: 26/@r;
+           opacity: 0.3;
+         display: inline-block; 
+      }
+      .wy{
+          vertical-align: middle;
+           background: #C000E1;     
+          margin-top:40/@r ;
+           color: #FFF;
+           padding: 2.5/@r 15/@r;
+           font-size: 26/@r;
+           opacity: 0.3;
+         display: inline-block; 
+      }
+      .time{
+          float: right;
+      display: inline-block;     
+          margin-top:40/@r ;
+     vertical-align: middle;
+      }
+     } 
+     
+  }
+}  
+}//gamebox
+
+}
+//游戏视频结束
+
+//尾部开始
+#foot{
+ width: 100%;  
+background: #EEE;    
+  color: #AAA; 
+  font-size: 30/@r;
+  text-align: center;
+ border-top: 2px solid #CCC;
+ .computer{
+     margin: 40/@r 0;
+   span{
+     display: inline-block;
+    padding: 10/@r 20/@r;
+    border: 1px solid #DDD;
+    border-radius: 5/@r;
+    background: #ddd;
+    color: #999;
+    text-align: center;     
+}
+     
+ }
+ .shengming{
+  padding-bottom: 40/@r;
+     font-size:20/@r;
+ }
+ 
+}
+//尾部结束
+
+

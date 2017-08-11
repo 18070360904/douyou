@@ -1,0 +1,297 @@
+a,
+input,
+button {
+  /*清除点击阴影*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+  /*清除按钮的圆角*/
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+body {
+  /*选中文字设置*/
+  margin: 0;
+  -webkit-user-select: none;
+  /*禁止文字缩放*/
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+body * {
+  /*文字设置*/
+  -webkit-user-select: none;
+  font-family: Helvetica;
+}
+p,
+ul,
+li,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+span {
+  margin: 0;
+  padding: 0;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.bg {
+  width: 100%;
+  height: 27.1rem;
+  background: url(../img/zhuce/b3.jpg) no-repeat;
+  background-size: cover ;
+  opacity: 0.7;
+  top: -0.4rem;
+  position: absolute;
+}
+.header {
+  position: relative;
+  width: 100%;
+  padding: 0.4rem 0 0;
+  box-sizing: border-box;
+  height: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid #ccc;
+}
+.header .header_text {
+  color: #616161;
+  font-size: 0.8rem;
+  margin-right: 0.4rem;
+}
+.header .header_back {
+  display: inline-block;
+  position: relative;
+  z-index: 22;
+  float: left;
+  margin-left: 0.4rem;
+  margin-top: 0.2rem;
+  width: 0.72rem;
+  height: 0.8rem;
+  background: url(../img/zhuce/d2.png) no-repeat 0 -2rem;
+  background-size: cover ;
+}
+.box {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  font-size: 0.84rem;
+}
+.box .user {
+  margin-top: 2rem;
+  position: relative;
+  padding: 0;
+}
+.box .user .ge {
+  display: inline-block;
+  width: 1.56rem;
+  border: 1px solid #ccc;
+  height: 1.4rem;
+  float: left;
+  box-sizing: border-box;
+}
+.box .user .ge img {
+  width: 1.56rem;
+  height: 1.4rem;
+}
+.box .user #username {
+  width: 80%;
+  float: left;
+  padding-left: 0.4rem;
+  font-size: 0.8rem;
+  background: #fff;
+  height: 1.4rem;
+  box-sizing: border-box;
+  border-color: skyblue;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-left: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+.box .dele {
+  position: absolute;
+  right: 1rem;
+  top: 0.3rem;
+  display: none;
+}
+.box .dele img {
+  width: 0.8rem;
+}
+.box .pass {
+  position: relative;
+}
+.box .pass .ge {
+  display: inline-block;
+  width: 1.56rem;
+  border: 1px solid #ccc;
+  height: 1.4rem;
+  float: left;
+  box-sizing: border-box;
+}
+.box .pass .ge img {
+  width: 1.56rem;
+  height: 1.4rem;
+}
+.box .pass #password {
+  width: 80%;
+  float: left;
+  padding-left: 0.4rem;
+  font-size: 0.8rem;
+  background: #fff;
+  height: 1.4rem;
+  box-sizing: border-box;
+  border-color: skyblue;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-left: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+.box .ack {
+  position: relative;
+}
+.box .ack .ge {
+  display: inline-block;
+  width: 1.56rem;
+  border: 1px solid #ccc;
+  height: 1.4rem;
+  float: left;
+  box-sizing: border-box;
+}
+.box .ack .ge img {
+  width: 1.56rem;
+  height: 1.4rem;
+}
+.box .ack #ack {
+  width: 80%;
+  float: left;
+  padding-left: 0.4rem;
+  font-size: 0.8rem;
+  background: #fff;
+  height: 1.4rem;
+  box-sizing: border-box;
+  border-color: skyblue;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-left: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+.box .code {
+  position: relative;
+}
+.box .code .ge {
+  display: inline-block;
+  width: 1.56rem;
+  border: 1px solid #ccc;
+  height: 1.4rem;
+  float: left;
+  box-sizing: border-box;
+}
+.box .code .ge img {
+  width: 1.56rem;
+  height: 1.4rem;
+}
+.box .code #code_input {
+  width: 40%;
+  float: left;
+  padding-left: 0.4rem;
+  font-size: 0.8rem;
+  background: #fff;
+  height: 1.4rem;
+  box-sizing: border-box;
+  border-color: skyblue;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-left: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+.box #code {
+  width: 37%;
+  float: left;
+  text-align: center;
+  font-size: 0.8rem;
+  background: #fff;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  box-sizing: border-box;
+  border-color: skyblue;
+  margin-left: 0.4rem;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-left: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+.box .zhuce_btn {
+  width: 80%;
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+  margin: 0 auto;
+}
+.box .zhuce_btn a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  height: 1.4rem;
+  color: #fff;
+  line-height: 1.4rem;
+  background: deepskyblue;
+}
+.box .zhuce_btn #btn_inf {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 0.6rem;
+  line-height: 0.8rem;
+  height: 0.8rem;
+  text-align: center;
+}
+.box .ts {
+  width: 80%;
+  height: 1rem;
+  font-size: 0.72rem;
+  padding-left: 1.6rem;
+  text-align: left;
+  line-height: 1rem;
+}
+.box .agree {
+  width: 80%;
+  margin-top: 0.4rem;
+  margin-bottom: 0.8rem;
+  height: 1.2rem;
+  font-size: 0.52rem;
+  padding-left: 1.2rem;
+}
+.box .agree span {
+  color: #F54638;
+}
+.box .enter {
+  width: 80%;
+  margin-top: 1.6rem;
+  height: 1.2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.box .enter a {
+  color: #025814;
+}

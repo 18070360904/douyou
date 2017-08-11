@@ -1,0 +1,163 @@
+a,
+input,
+button {
+  /*清除点击阴影*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+  /*清除按钮的圆角*/
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+body {
+  /*选中文字设置*/
+  margin: 0;
+  -webkit-user-select: none;
+  /*禁止文字缩放*/
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+body * {
+  /*文字设置*/
+  -webkit-user-select: none;
+  font-family: Helvetica;
+}
+p,
+ul,
+li,
+h2,
+a {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+span {
+  margin: 0;
+  padding: 0;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.header {
+  width: 100%;
+  position: relative;
+  background: #1C63CF;
+  height: 1.8rem;
+}
+.header #seach {
+  float: left;
+  width: 7rem;
+  position: absolute;
+  top: 0.3rem;
+  left: 30%;
+  height: 1.2rem;
+  font-size: 0.64rem;
+  vertical-align: middle;
+  border: 0;
+  color: darkslategray;
+  border: 0.02rem solid #00bfff;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+  padding-left: 0.6rem;
+}
+.header #logo_d {
+  float: left;
+  width: 4rem;
+  height: 1.8rem;
+  background: url("../img/d1.png") no-repeat 0.24rem 0.32rem;
+  background-size: 3.6rem;
+}
+.header .logo_you {
+  float: right;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  position: relative;
+}
+.header .logo_you #logo_ge {
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  background: url("../img/i1.png") no-repeat 0.6rem 0.4rem;
+  background-size: 0.8rem;
+}
+.header .logo_you #logo_seach {
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  background: url("../img/d1.png") no-repeat 0.84rem -1.5rem;
+  background-size: 4.06rem;
+}
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#list {
+  position: absolute;
+  border: 1px solid #ccc;
+  top: 1.8rem;
+  width: 47%;
+  background: #FFFFFF;
+  left: 30%;
+}
+#list a {
+  padding-left: 0.4rem;
+  font-size: 0.6rem;
+  color: #000000;
+}
+.ren {
+  font-size: 0.64rem;
+  color: darkslategray;
+}
+.ren span {
+  border: 0.02rem solid #000000;
+  border-left-radius: 20%;
+}
+.tags {
+  padding: 0.42rem 0 0 0.52rem;
+}
+.tags h2 {
+  line-height: 1.08rem;
+  font-size: 0.56rem;
+}
+.tags label {
+  float: left;
+  line-height: 1rem;
+  margin: 0.2rem 0.28rem 0.2rem 0.06rem;
+}
+.tags label input {
+  display: none;
+}
+.tags label span {
+  float: left;
+  font-size: 0.6rem;
+  border: 0.02rem solid #cdd6e1;
+  padding: 0 0.24rem;
+  border-radius: 0.52rem;
+}
+.huo {
+  color: #F60;
+}
+.tags input:checked + span {
+  border-color: #3c9bbb;
+  background-color: #3c9bbb;
+  color: #fff;
+}
+#vd {
+  margin-top: 2rem;
+  width: 80%;
+  margin-left: 1rem;
+}
+#vd p {
+  font-size: 0.72rem;
+  padding: 0.4rem 0;
+}
