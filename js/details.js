@@ -10,7 +10,6 @@ var oExit=id('exit');//这是退出
 oValue.value='';
 id('fa').addEventListener('click',function(){
 	if(loc.deng){
-		console.log(oValue.value);
 			    if(oValue.value==""){
 				    oInf.innerHTML='请填写内容';
 				    oInf.style.color='red';	

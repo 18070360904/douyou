@@ -69,6 +69,116 @@ span{
 
 
 //图灵机器人结束
+//这是更换头像
+.myZoe{
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    display:none;
+.bg{
+    background:#000;
+    opacity:0.7;
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    width: 100%;
+    height: 100%;
+    }
+    .box{
+        position:right;
+        left:60%;
+        width: 60%;
+        height: 100%;
+        background:#fff;
+        float:right;
+        position:relative;
+        z-index:666;
+        .tx{
+            margin-top:70/@r;
+            img{
+                margin:0 auto;
+                width: 150/@r;
+                height: 150/@r;
+                overflow:hidden;
+                display:block;
+                border-radius:50%;
+            }
+            p{
+                margin:0 auto;
+                margin-top:20/@r;
+//              background:#0091e7;
+                border-radius:10/@r;
+                color:#222;
+                font-size:45/@r;
+                height:70/@r;
+                line-height:70/@r;
+                text-align:center;
+            }
+        }
+        ul{
+            padding-left:30/@r;
+            li{
+                float:left;
+                width: 185/@r;
+                height:70/@r;
+                line-height:70/@r;
+                text-align:center;
+                background:#222;
+                margin-right:20/@r;
+                margin-top:35/@r;
+                color:#fff;
+                font-size:35/@r;
+                border-radius:10/@r;
+            }
+        }
+    }
+}
+.image{
+    background:#fff;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index:999;
+    .header{
+        width: 100%;
+        height: 90/@r;
+        background:#222;
+        position:relative;
+        a{
+            position:absolute;
+            right:30/@r;
+            top:20/@r;
+            font-size:60/@r;
+            color:#fff;
+        }
+    }
+    .imgs{
+        padding:50/@r 0 0 45/@r;
+        li{
+            float:left;
+            border:1px solid #aaa;
+            width: 200/@r;
+            height:200/@r;
+            box-sizing:border-box;
+            border-radius:10/@r;
+            overflow:hidden;
+            margin-right:30/@r;
+            margin-bottom:30/@r;
+            img{
+                width:200/@r;
+                height:200/@r;
+            }
+        }
+    }
+}
+
+//更换头像结束
 //图灵界面
 
 #ji{
@@ -218,7 +328,7 @@ position: absolute;
     width: 100%;
     position: absolute;
     left: 0rem;
-    bottom: 0rem; 
+    bottom: -1rem; 
     input{
      width:85%;
     height: 1.6rem;
@@ -285,8 +395,8 @@ position: absolute;
         font-size: 18px;
         background: #fff;
        p{
-           width:60%;
-           height: 50/@r;
+           width:70%;
+           height: 40/@r;
            overflow: hidden;
            position: absolute;
            bottom: 10/@r;

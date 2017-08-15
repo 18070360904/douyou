@@ -170,7 +170,7 @@ span {
   display: none;
 }
 #arrow #aimg {
-  position: absolute ;
+  position: absolute;
   z-index: 2;
   width: 2rem;
   height: 1.6rem;
@@ -281,7 +281,7 @@ span {
   opacity: 0.3;
 }
 .arrow .aimg {
-  position: absolute ;
+  position: absolute;
   z-index: 2;
   width: 2rem;
   height: 1.6rem;
@@ -298,7 +298,7 @@ span {
   width: 94%;
   height: auto;
   padding: 0.4rem 0.4rem 0.2rem 0.4rem;
-  border-bottom: 0.02rem solid #eeeeee;
+  border-bottom: 0.02rem solid #EEE;
   color: #333;
   text-decoration: none;
   margin-right: 0.4rem;
@@ -338,7 +338,7 @@ span {
   width: 94%;
   height: auto;
   padding: 0.4rem 0.4rem 0.2rem 0.4rem;
-  border-bottom: 0.02rem solid #eeeeee;
+  border-bottom: 0.02rem solid #EEE;
   color: #333;
   text-decoration: none;
   margin-right: 0.4rem;
@@ -553,3 +553,4 @@ span {
   padding-bottom: 0.8rem;
   font-size: 0.4rem;
 }
+/*# sourceMappingURL=danji.css.map */
